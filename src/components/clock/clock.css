@@ -1,0 +1,67 @@
+.clock-container {
+  position: relative;
+  margin: auto;
+  height: 38vw;
+  width: 38vw;
+  /* background: url("../../assets/clock-face.png") no-repeat; */
+  /* background: url("../../assets/clock-face2.png") no-repeat; */
+  background: url("../../assets/clock-face3.png") no-repeat;
+  background-size: 100%;
+
+  .clock-hand {
+    position: absolute;
+    transform-origin: bottom;
+    color: black;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 2vw;
+    left: 46.8%;
+
+    &.hours {
+      /* display: none;
+      background: yellow; */
+      font-size: 1.8vw;
+      font-weight: bold;
+      line-height: 1;
+      overflow: hidden;
+      height: 25%;
+      top: 24.6%;
+    }
+
+    &.minutes {
+      /* display: none;
+      background: red; */
+      font-size: 1.6vw;
+      line-height: 1;
+      overflow: hidden;
+      height: 30%;
+      top: 19.6%;
+    }
+
+    &.seconds {
+      /* display: none;
+      background: blue; */
+      font-size: 1.2vw;
+      line-height: 1;
+      overflow: hidden;
+      height: 35%;
+      top: 14.6%;
+      /* transform: rotate(180deg); */
+    }
+  }
+
+  .clock-center-point {
+    /* display: none; */
+    position: absolute;
+    transform-origin: bottom;
+    background-color: red;
+    width: 2.8vw;
+    height: 2.8vw;
+    top: 45.9%;
+    left: 45.8%;
+    border-radius: 50%;
+  }
+}
